@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login_Page | Techno_Hacks_Task_2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="converter">
+            <h1>Currency Converter</h1>
+            <br> <br>
+            <div class="amount">
+                <label for="amount" id="amount_label">Amount:</label>
+                <input type="number" class="border" id="amount" min="0" step="any">
+            </div>
+            <br>
+            <div class="type">
+                <label for="from" id="from_label">From:</label>
+                <select id="from" class="border">
+                    <option value="USD">USD</option>
+                    <option value="INR">INR</option>
+                    <option value="EUR">EUR</option>
+                    <option value="RUB">RUB</option>
+                    <option value="CNY">CNY</option>
+                    <option value="PKR">PKR</option>
+                </select>
+                <label for="to">To:</label>
+                <select id="to" class="border">
+                    <option value="INR">INR</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="RUB">RUB</option>
+                    <option value="CNY">CNY</option>
+                    <option value="PKR">PKR</option>
+                </select>
+            </div>
+            <br>
+            <div class="result">
+                <label for="result" id="result_label">Result:</label>
+                <input type="number" class="border" id="result" disabled>
+            </div>
+            <br>
+            <button type="submit" class="" id="btn" onclick="Converter()">Convert</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
